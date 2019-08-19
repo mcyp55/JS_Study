@@ -9,8 +9,9 @@ const array = [
  1, true, {a: 1}, [1,2,3,4]
 ];
 ```
-
+```js
 console.log(array[2])  // {a:1}
+```js
 array.push(6)
 
 console.log(array[5]) // 6
