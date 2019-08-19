@@ -11,9 +11,19 @@ const array = [
 ```
 ```js
 console.log(array[2])  // {a:1}
+//배열의 3번째 항목을 지정
+```
 ```js
 array.push(6)
+//배열의 새로운 값을 추가
 
-console.log(array[5]) // 6
+console.log(array[5])
+//새로 추가한 값 확인
 
+```
+
+```js
 console.log(array.length)
+// 배열의 크기(갯수)를 볼 수 있다.
+
+```
