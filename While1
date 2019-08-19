@@ -1,0 +1,46 @@
+while 반복문
+
+```js
+let i = 0; // 함수 선언
+
+while (i < 10) {   // 조건
+  i ++ // 증감연산자
+}
+```
+
+while문은 조건이 언젠가는 false가 되어야 한다.
+false가 되지 않으면 영원히 끝나지 않는다.
+
+while문은 숫자를 올리는대 사용하는건 적합하지 않다.
+오히려 for문을 사용하는게 적합하다.
+
+
+```js
+let i = 0;
+let isFun = false;
+
+while (isFun === false) {
+  console.log(i);
+  i++;
+  if (i === 30) {
+    isFun = true;
+  }
+}
+
+console.log(isFun);
+```
+
+```js
+let i = 0;
+let isFun = false;
+
+while (!isFun) { // ! 자바스크립트 논리연산자로 isFun의 값이 false 에서 !isFun 으로 true 로 변함.
+  console.log(i);
+  i++;
+  if (i === 30) {
+    isFun = true;
+  }
+}
+
+console.log(isFun);
+```
