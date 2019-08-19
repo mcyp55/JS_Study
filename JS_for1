@@ -1,0 +1,27 @@
+반복문 - // 특정 작업을 반복적으로 할때 사용함.
+값이 false가 될때까지 반복한다.
+
+```js
+for ( let i = 0; i < 10; i++){
+  console.log(i)
+}
+```
+let i = 0; 변수 선언
+i < 10; 조건 선언
+i++ 반복할때마다 1씩 더한다. //(i-=2 반복할때마다 2씩 뺀다.)
+
+
+for문 과 배열을 함께 쓴 사용 예시
+
+const names = ['유니콘', '페가수스', '유니가수스'];
+names.push({name: 'mcyp55', Age: 23});
+
+
+for (let i = 0; i < names.length; i++ ) {
+  console.log(names[i]); // names의 i
+}
+//let i = 0; 변수 선언
+//i < names.length; 조건 선언(i는 names.lenght보다 작아야한다. i>3)
+//i++ 반복문이 실행될 때 마다 1씩 늘어난다.
+
+```
