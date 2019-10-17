@@ -1,0 +1,47 @@
+# 생성자 함수 
+
+1. 생성자 함수를 작성함으로 개체를 정의합니다.
+2. new 연산자를 사용하여 개체의 인스턴스를 만듭니다.
+link(https://www.samsung.com/sec/smartphones/all-smartphones/?galaxy-note)
+
+
+``` js
+
+//생성자 함수 생성
+function Samsung_Phone(name, cpu, display, ois, memory){
+  this.name = name;
+  this.cpu = cpu;
+  this.display = display;
+  this.ois = ois;
+  this.memory = memory;
+}
+
+// Galaxy_note10 변수 생성
+var Galaxy_note10 = new Samsung_Phone(
+'갤럭시 노트10+5G 자급제',
+{'CPU속도' : '2.7 GHz, 2.4 GHz, 1.9 GHz', 'CPU 종류' : 'Ocat-Core'},
+'3040 x 1440 (Quad HD+)',
+'Yes',
+'12 GB',
+)
+
+// Galaxy_note9 변수 생성
+var galaxy_note9 = new Samsung_Phone(
+'갤럭시 노트9 자급제',
+{'CPU속도' : '2.7 GHz, 1.7 GHz', 'CPU 종류' : 'Ocat-Core'},
+'2960 x 1440 (Quad HD+)',
+'Yes',
+'8 GB',
+)
+
+```
+
+함수의 인자로 전달받은 값을 개체의 속성에 할당하기 위해 this를 사용했다.
+
+
+```js 
+
+// 정의된 개체에 아무때나 속성을 추가 할 수 있다.
+galaxy_note9.memory = '16 GB' // log "16 GB"
+
+```
